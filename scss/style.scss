@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'gb';
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: 'gr';
+    src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+    font-family: 'gsb';
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+}
 body {
     box-sizing: border-box;
 }
@@ -36,6 +48,13 @@ body {
 }
 
 .center_block {
+    max-width: 1150px;
+    width: 100%;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center_block2 {
     max-width: 1150px;
     width: 100%;
     margin: 10px 0;
@@ -183,3 +202,112 @@ textarea {
 }
 // popup end
 
+// first_block
+.first_block {
+    position: relative;
+    padding: 100px 0;
+    background: url("../img/bg_frst.png") 50% 0% no-repeat;
+    @media all and (max-width: 980px) {
+        background-size: 1270px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__in {
+        position: relative;
+    }
+    &__bg_link {
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        @media all and (max-width: 980px) {
+            display: none;
+        }
+    }
+    &__link-add {
+        position: absolute;
+        top: -90px;
+        left: 11px;
+        display: block;
+        font-size: 0;
+        @media all and (max-width: 980px) {
+            display: none;
+        }
+    }
+    &__l-img {
+        left: 100px;
+        bottom: 110px;
+        position: absolute;
+        max-width: 320px;
+        width: 100%;
+        @media all and (max-width: 1720px) {
+            display: none;
+        }
+    }
+    &__r-img {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        max-width: 310px;
+        width: 100%;
+        @media all and (max-width: 1720px) {
+            display: none;
+        }
+    }
+    &__title {
+        font-family: 'gb', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 99px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        @media all and (max-width: 980px) {
+            margin-bottom: 15px;
+            font-size: 40px;
+            line-height: normal;
+        }
+    }
+    &__text {
+        font-family: 'gr', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 42px;
+        max-width: 630px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        @media all and (max-width: 980px) {
+            margin-bottom: 15px;
+            font-size: 25px;
+            line-height: normal;
+        }
+    }
+    &__button {
+        text-align: center;
+        a {
+            text-decoration: none;
+            display: inline-block;
+            font-family: 'gsb', serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: #000000;
+            padding: 15px 34px;
+            background: #FFEE00;
+            border-radius: 100px;
+            transition: all .3s ease-out;
+            border: 2px solid #FFEE00;
+            &:hover {
+                background: #fff;
+            }
+        }
+    }
+}
+// first_block end
